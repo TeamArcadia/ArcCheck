@@ -1,0 +1,25 @@
+name: PXCheck
+main: com.pangdang.pxcheck.PXCheck
+author: HanYung_
+api-version: '1.17'
+version: '${version}'
+
+commands:
+  수표:
+
+  수표관리:
+
+permissions:
+  px.check.manage.*:
+    default: op
+    children:
+      - px.check.manage.reload
+      - px.check.manage.get
+      - px.check.manage.give
+
+  px.check.manage.reload:
+    default: op
+  px.check.manage.get:
+    default: op
+  px.check.manage.give:
+    default: op

@@ -3,47 +3,72 @@ package com.pangdang.pxcheck.command.sub;
 import com.pangdang.pxcheck.PXCheck;
 import com.pangdang.pxcheck.command.SubCommand;
 import com.pangdang.pxcheck.manage.CheckManager;
+import com.pangdang.pxcheck.message.MessageContext;
 import com.pangdang.pxcheck.message.MessageType;
-import org.bukkit.Bukkit;
+import com.pangdang.pxcheck.util.DecimalFormat;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.util.StringUtil;
 
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
-public class CheckGiveCommand implements SubCommand {
+public class GiveCheckCommand implements SubCommand {
+    private final PXCheck plugin = PXCheck.getInstance();
+
     @Override
     public String getKoName() {
-        return "수표관리";
+        return "지급";
     }
 
     @Override
     public String getKoDescription() {
-        return "수표 설정을 관리합니다.";
+        return "플러이어에게 수표를 지급합니다";
     }
 
     @Override
     public String getKoUsage() {
-        return null;
+        return "<플레이어>";
     }
 
     @Override
     public String getPermission(CommandSender sender) {
-        return null;
+        return "give";
     }
 
     @Override
     public void execute(CommandSender sender, String[] args) {
+        MessageContext messageContext = MessageContext.getInstance();
+        Player player = (Player) sender;
 
-        String targetPlayerName = args[1];
-        Player targetPlayer = Bukkit.getPlayer(targetPlayerName);
-        String amount = args[2];
+        if (args.length == 3) {
+            Player target = plugin.getServer().getPlayerExact(args[1]);
+            int amount = Integer.parseInt(args[2]);
 
-        CheckManager.giveCheck(targetPlayer, Integer.parseInt(amount));
+            CheckManager.giveCheck(target, amount);
+            String df_money = DecimalFormat.decimalFormat(amount);
 
+            player.playSound(player.getLocation(), PXCheck.getInstance().getConfigManager().getSound("give_check"), 1.0f, 1.0f);
+            messageContext.get(MessageType.MAIN, "give_check",
+                    (it) -> it.replace("{check_amount}", df_money)
+                            .replace("{player}" , target.getName())).send(sender);
+
+        } else {
+            messageContext.get(MessageType.ERROR, "wrong_command").send(sender);
+        }
     }
 
     @Override
     public List<String> tabComplete(CommandSender sender, String[] args) {
-        return null;
+        List<String> completions = new ArrayList<>();
+        if (sender.isOp()) {
+            if (args.length == 2) {
+                completions.addAll(PXCheck.getInstance().getServer().getOnlinePlayers().stream().map(Player::getName).toList());
+            } else if (args.length == 3) {
+                completions.addAll(Arrays.asList("10", "100", "1000"));
+            }
+        }
+        return StringUtil.copyPartialMatches(args[args.length - 1], completions, new ArrayList<>());
     }
 }

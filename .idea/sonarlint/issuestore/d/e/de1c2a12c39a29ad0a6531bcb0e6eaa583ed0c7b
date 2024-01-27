@@ -1,0 +1,62 @@
+
+f
+java:S1192D"IDefine a constant instead of duplicating this literal "v1_17_R1" 6 times.(–‚ü¼8™©²çĞ1
+k
+java:S1192I"IDefine a constant instead of duplicating this literal "v1_19_R3" 6 times.(²¢¼éúÿÿÿÿ8œ©²çĞ1
+e
+java:S1192@"IDefine a constant instead of duplicating this literal "v1_15_R1" 6 times.(ÈÃo8œ©²çĞ1
+f
+java:S1192G"IDefine a constant instead of duplicating this literal "v1_19_R1" 6 times.(ã¬óÛ8œ©²çĞ1
+k
+java:S1192H"IDefine a constant instead of duplicating this literal "v1_19_R2" 6 times.(¸ö¡êÿÿÿÿÿ8œ©²çĞ1
+k
+java:S1192>"IDefine a constant instead of duplicating this literal "v1_13_R2" 6 times.(›œÑûÿÿÿÿÿ8œ©²çĞ1
+k
+java:S1192="IDefine a constant instead of duplicating this literal "v1_13_R1" 5 times.(ìºÓ×ûÿÿÿÿ8©²çĞ1
+k
+java:S1192J"IDefine a constant instead of duplicating this literal "v1_20_R1" 6 times.(Øô§µüÿÿÿÿ8©²çĞ1
+f
+java:S1192K"IDefine a constant instead of duplicating this literal "v1_20_R2" 6 times.(áãı8©²çĞ1
+k
+java:S1192L"IDefine a constant instead of duplicating this literal "v1_20_R3" 6 times.(ü–¬ıÿÿÿÿ8©²çĞ1
+f
+java:S1192F"IDefine a constant instead of duplicating this literal "v1_18_R2" 6 times.(Š¹Â8©²çĞ1
+f
+java:S1192A"IDefine a constant instead of duplicating this literal "v1_16_R1" 6 times.(«Ÿı½8Ÿ©²çĞ1
+f
+java:S1192B"IDefine a constant instead of duplicating this literal "v1_16_R2" 6 times.(Á¹¡ë8Ÿ©²çĞ1
+k
+java:S1192C"IDefine a constant instead of duplicating this literal "v1_16_R3" 6 times.(œÈó¸øÿÿÿÿ8 ©²çĞ1
+f
+java:S1192?"IDefine a constant instead of duplicating this literal "v1_14_R1" 6 times.(Éñâú8 ©²çĞ1
+k
+java:S1192E"IDefine a constant instead of duplicating this literal "v1_18_R1" 6 times.(Íê–èùÿÿÿÿ8¡©²çĞ1
+f
+java:S1192<"IDefine a constant instead of duplicating this literal "v1_12_R1" 6 times.(É…í…8¡©²çĞ1
+u	java:S116"YRename this field "ItemStackClass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(´†¼Ê8¸©²çĞ1
+	java:S116("^Rename this field "CraftItemStackClass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ò¦¶¯ÿÿÿÿÿ8¸©²çĞ1
+	java:S1164"`Rename this field "ItemStackSetTagMethod" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡½Åöùÿÿÿÿ8¸©²çĞ1
+	java:S116W"`Rename this field "ItemStackGetTagMethod" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û¸Ü–ÿÿÿÿÿ8¸©²çĞ1
+z	java:S116z"^Rename this field "NBTTagCompoundClass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û•ÒÀ8¸©²çĞ1
+q	java:S116Ñ"TRename this field "ItemClass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ˆóÜ°8¸©²çĞ1
+r	java:S116¢"URename this field "WorldClass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡…ãÔ8º©²çĞ1
+x	java:S116²"[Rename this field "EntityHumanClass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ÆíšŸ8º©²çĞ1
+u	java:S116Â"XRename this field "EnumHandClass" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(çò±²8º©²çĞ1
+µ
+java:S6548
+"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(¯­Ñ#8¾©²çĞ1
+9
+java:S1116"Remove this empty statement.(ÄÂÿë8Ä©²çĞ1
+j	java:S100"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(°¹ñª8Å©²çĞ1
+j	java:S100)"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(¹ÊèÚ8È©²çĞ1
+i	java:S1005"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ÿ³ñ_8Ê©²çĞ1
+o	java:S100X"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(•¶¥›ûÿÿÿÿ8Ó©²çĞ1
+j	java:S100{"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(øıÑ8Ø©²çĞ1
+p	java:S100‹"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(îÉ…Öùÿÿÿÿ8Ú©²çĞ1
+j	java:S100¯"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(ª«İ<8à©²çĞ1
+j	java:S100Ò"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(‡çãI8æ©²çĞ1
+p	java:S100â"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ãµ°áùÿÿÿÿ8ç©²çĞ1
+k	java:S100‚"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ü°æ8Çª²çĞ1
+p	java:S100£"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(áâ•Ìüÿÿÿÿ8Ğª²çĞ1
+p	java:S100³"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(öÈ«úÿÿÿÿ8Òª²çĞ1
+p	java:S100Ã"NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Û§ï¼ÿÿÿÿÿ8Õª²çĞ1

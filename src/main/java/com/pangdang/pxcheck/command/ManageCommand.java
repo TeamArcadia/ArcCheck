@@ -1,6 +1,8 @@
 package com.pangdang.pxcheck.command;
 
+import com.pangdang.pxcheck.command.sub.GetCheckCommand;
 import com.pangdang.pxcheck.command.sub.GiveCheckCommand;
+import com.pangdang.pxcheck.command.sub.ReloadConfigCommand;
 import org.bukkit.command.CommandSender;
 import org.bukkit.command.PluginCommand;
 import org.bukkit.command.TabExecutor;
@@ -11,11 +13,11 @@ import org.jetbrains.annotations.Nullable;
 
 import java.util.*;
 
-public class Command implements TabExecutor {
+public class ManageCommand implements TabExecutor {
 
     private final Map<String, SubCommand> subCommands = new HashMap<>();
 
-    public Command(JavaPlugin plugin) {
+    public ManageCommand(JavaPlugin plugin) {
         PluginCommand command = plugin.getCommand("수표관리");
         if (command != null) {
             command.setExecutor(this);
@@ -25,7 +27,9 @@ public class Command implements TabExecutor {
     }
 
     private void registerSubCommands() {
+        registerSubCommand(new ReloadConfigCommand());
         registerSubCommand(new GiveCheckCommand());
+        registerSubCommand(new GetCheckCommand());
     }
 
     private void registerSubCommand(SubCommand subCommand) {
@@ -33,27 +37,28 @@ public class Command implements TabExecutor {
     }
 
     private boolean hasPermission(CommandSender sender, SubCommand subCommand) {
-        String permission = "px.check.manage" + subCommand.getPermission(sender);
+        String permission = "px.check.manage." + subCommand.getPermission(sender);
         if (permission == null || permission.isEmpty()) {
             return true;
         }
         return sender.hasPermission(permission);
     }
 
+
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull org.bukkit.command.Command command, @NotNull String label, @NotNull String[] args) {
         if (args.length == 0) {
             Set<SubCommand> uniqueSubCommands = new HashSet<>(subCommands.values());
 
-            sender.sendMessage(" §6§m                                         §r");
-            sender.sendMessage("§7[ §e§l수표§7§l관리 §f| §f명령어 도움말 §7]");
+            sender.sendMessage("§8§m                                                     §r");
+            sender.sendMessage("§7[ §e§l수표§7§l관리 §f| §f명령어 도움말 §7]");   
 
             for (SubCommand subCommand : uniqueSubCommands) {
-                sender.sendMessage("§e▶ §f/유저관리 " + subCommand.getKoName() + " " + subCommand.getKoUsage() );
+                sender.sendMessage("§e▶ §f/수표관리 " + subCommand.getKoName() + " " + subCommand.getKoUsage() );
                 sender.sendMessage("      §7└" + subCommand.getKoDescription());
             }
 
-            sender.sendMessage("");
+            sender.sendMessage("§8§m                                                     §r");
             return true;
         }
 

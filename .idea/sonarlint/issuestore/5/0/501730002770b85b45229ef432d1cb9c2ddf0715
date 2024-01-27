@@ -1,0 +1,8 @@
+
+¶
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(ˆù¼å8É¡çĞ1
+X
+java:S2696!"6Make the enclosing method "static" or remove this set.(ñõîÙşÿÿÿÿ8¯•ŸçĞ1
+X	java:S125B"<This block of commented-out lines of code should be removed.(Â¦áª8ÚñïéĞ1
+P
+java:S1874R"3Remove this use of "sendMessage"; it is deprecated.(€Ä–ë8Ë°¿èĞ1

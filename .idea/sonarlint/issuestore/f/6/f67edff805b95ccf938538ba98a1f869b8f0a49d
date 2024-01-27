@@ -1,0 +1,9 @@
+
+]
+java:S2259?"@A "NullPointerException" could be thrown; "br" is nullable here.(µÖ€’8êá»çĞ1
+o	java:S100 "NRename this method name to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ù—€·ùÿÿÿÿ8úá»çĞ1
+c	java:S899#"BDo something with the "boolean" value returned by "createNewFile".(Ğ’Íùÿÿÿÿ8üá»çĞ1
+E	java:S108@")Either remove or fill this block of code.(¨šşµ8‚â»çĞ1
+E	java:S108C")Either remove or fill this block of code.(¨šşµ8ƒâ»çĞ1
+L
+java:S20937"*Change this "try" to a try-with-resources.(¡»¢üùÿÿÿÿ8‡â»çĞ1

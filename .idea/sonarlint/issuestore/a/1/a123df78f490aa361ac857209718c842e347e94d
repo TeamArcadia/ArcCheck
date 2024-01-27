@@ -1,0 +1,20 @@
+
+d
+java:S1192"GDefine a constant instead of duplicating this literal "reload" 3 times.(¼©½8‘‡˜êĞ1
+Q
+java:S1066-"/Merge this if statement with the enclosing one.(ºÁ‚¯ùÿÿÿÿ8¥¹—êĞ1
+E
+java:S5411"(Use a primitive boolean expression here.(¼©½8¦¹—êĞ1
+J
+java:S5411"(Use a primitive boolean expression here.(ç¯¾‹ÿÿÿÿÿ8¦¹—êĞ1
+J
+java:S5411"(Use a primitive boolean expression here.(ËÙ–¸şÿÿÿÿ8¦¹—êĞ1
+E
+java:S5411"(Use a primitive boolean expression here.(ºŸ’¾8”‡˜êĞ1
+J
+java:S5411"(Use a primitive boolean expression here.(¹‘›½ıÿÿÿÿ8”‡˜êĞ1
+E
+java:S5411"(Use a primitive boolean expression here.(©„¹ˆ8”‡˜êĞ1
+{	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(ò¡âÿÿÿÿÿ8§¹—êĞ1
+o
+java:S3776"RRefactor this method to reduce its Cognitive Complexity from 35 to the 15 allowed.(¨œ‚8¸¹—êĞ1
