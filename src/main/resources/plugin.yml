@@ -1,4 +1,4 @@
-name: PXCheck
+name: ArcCheck
 main: com.pangdang.pxcheck.PXCheck
 author: HanYung_
 api-version: '1.17'
@@ -10,16 +10,16 @@ commands:
   수표관리:
 
 permissions:
-  px.check.manage.*:
+  arc.check.manage.*:
     default: op
     children:
-      - px.check.manage.reload
-      - px.check.manage.get
-      - px.check.manage.give
+      - arc.check.manage.reload
+      - arc.check.manage.get
+      - arc.check.manage.give
 
-  px.check.manage.reload:
+  arc.check.manage.reload:
     default: op
-  px.check.manage.get:
+  arc.check.manage.get:
     default: op
-  px.check.manage.give:
+  arc.check.manage.give:
     default: op

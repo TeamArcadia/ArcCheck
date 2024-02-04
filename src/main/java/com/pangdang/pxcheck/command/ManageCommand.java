@@ -37,13 +37,12 @@ public class ManageCommand implements TabExecutor {
     }
 
     private boolean hasPermission(CommandSender sender, SubCommand subCommand) {
-        String permission = "px.check.manage." + subCommand.getPermission(sender);
+        String permission = "arc.check.manage." + subCommand.getPermission(sender);
         if (permission == null || permission.isEmpty()) {
             return true;
         }
         return sender.hasPermission(permission);
     }
-
 
     @Override
     public boolean onCommand(@NotNull CommandSender sender, @NotNull org.bukkit.command.Command command, @NotNull String label, @NotNull String[] args) {

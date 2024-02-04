@@ -24,7 +24,7 @@ public class GiveCheckCommand implements SubCommand {
 
     @Override
     public String getKoDescription() {
-        return "플러이어에게 수표를 지급합니다";
+        return "플레이어에게 수표를 지급합니다.";
     }
 
     @Override
