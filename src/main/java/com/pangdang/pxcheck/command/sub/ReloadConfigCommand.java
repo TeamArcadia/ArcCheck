@@ -36,7 +36,9 @@ public class ReloadConfigCommand implements SubCommand {
 
         if (args.length == 1) {
 
+
             PXCheck.getInstance().reloadConfig();
+            PXCheck.getInstance().saveConfig();
             messageContext.initialize(PXCheck.getInstance().getConfig());
             messageContext.get(MessageType.NORMAL, "reload_config").send(sender);
 

@@ -6,12 +6,15 @@ import com.pangdang.pxcheck.nms.tank.NmsItemStackUtil;
 import com.pangdang.pxcheck.nms.wrapper.NBTTagCompoundWrapper;
 import com.pangdang.pxcheck.nms.wrapper.NmsItemWrapper;
 import com.pangdang.pxcheck.util.DecimalFormat;
+import net.md_5.bungee.api.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.inventory.meta.ItemMeta;
 
 import java.util.Collections;
+import java.util.List;
+import java.util.stream.Collectors;
 
 public class CheckManager {
 
@@ -35,8 +38,14 @@ public class CheckManager {
         String name = PXCheck.getInstance().getConfigManager().getCheckItemInfo("name").replace("{check_amount}", df_money);
         itemMeta.setDisplayName(name);
 
-        String lore = PXCheck.getInstance().getConfigManager().getCheckItemInfo("lore").replace("{check_amount}", df_money);
-        itemMeta.setLore(Collections.singletonList(lore));
+
+        List<String> lore = PXCheck.getInstance().getConfig().getStringList("check-item.lore");
+
+        List<String> coloredLore = lore.stream()
+                .map(line -> ChatColor.translateAlternateColorCodes('&', line))
+                .collect(Collectors.toList());
+
+        itemMeta.setLore(coloredLore);
 
         itemMeta.setCustomModelData(Integer.valueOf(PXCheck.getInstance().getConfigManager().getCheckItemInfo("custom_model_data")));
         itemStack.setItemMeta(itemMeta);

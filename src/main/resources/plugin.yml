@@ -2,7 +2,7 @@ name: ArcCheck
 main: com.pangdang.pxcheck.PXCheck
 author: HanYung_
 api-version: '1.17'
-version: '${version}'
+version: '1.0.1'
 
 commands:
   수표:
